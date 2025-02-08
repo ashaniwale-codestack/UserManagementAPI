@@ -5,7 +5,7 @@ using UserManagementAPI.Interface;
 using UserManagementAPI.Models;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class UsersController : ControllerBase
 {
     private IUserService _userService;
