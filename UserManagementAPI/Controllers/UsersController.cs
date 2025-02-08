@@ -15,7 +15,7 @@ public class UsersController : ControllerBase
         _userService = userService;
     }
 
-    [HttpGet("Test")]
+    [HttpGet("TestAPI")]
     public IActionResult Test()
     {
         return Ok("Success");
