@@ -15,7 +15,13 @@ public class UsersController : ControllerBase
         _userService = userService;
     }
 
-    [HttpPost("Login")]
+    [HttpGet("Test")]
+    public IActionResult Test()
+    {
+        return Ok("Success");
+    }
+
+        [HttpPost("Login")]
     public IActionResult Authenticate([FromForm] AuthenticateRequest input)
     {
         if (!ModelState.IsValid)
